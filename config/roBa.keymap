@@ -67,13 +67,13 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                      &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                  &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 2 CAPSLOCK      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                 &kp T                                                      &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))                  &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &kp COLON                      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LCTRL CARET   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 TAB  &lt 3 SPACE  &lt_to_layer_0 2 CAPSLOCK      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         Symbols {
@@ -83,6 +83,8 @@
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans                 &trans      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp DOUBLE_QUOTES  &kp NON_US_BACKSLASH
 &trans     &trans           &trans        &trans                &trans                 &trans      &trans  &trans                                                                         &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp KP_PLUS KP_MINUS>;
         };
 
         NUM {
@@ -107,10 +109,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5      &trans  &trans                                &trans
             >;
         };
 
