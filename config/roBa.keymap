@@ -52,6 +52,9 @@
         };
     };
 
+
+    };
+
 behaviors {
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
@@ -61,7 +64,6 @@ behaviors {
             tap-ms = <20>;
         };
 
-    };
 
     keymap {
         compatible = "zmk,keymap";
